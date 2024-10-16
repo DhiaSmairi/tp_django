@@ -1,0 +1,12 @@
+<div class="meetings-section">
+    <h2>Rooms</h2>
+  
+    <ul>
+      {% for room in room %}
+      <li>
+        <a href="{% url 'room   ' room.id %}">{{ room.name }}</a>  <!-- Lien vers le détail -->
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  
